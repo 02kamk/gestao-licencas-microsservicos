@@ -1,0 +1,28 @@
+@Licencas_API_HostAddress = https://localhost:7079
+
+GET {{Licencas_API_HostAddress}}/api/licencas
+Accept: application/json
+
+###
+
+POST {{Licencas_API_HostAddress}}/api/licencas
+Content-Type: application/json
+
+{
+  "colaboradorId": 1,
+  "cliente": "Empresa Exemplo",
+  "produto": "Sistema ERP",
+  "validaAte": "2026-12-31T23:59:59"
+}
+
+###
+
+GET {{Licencas_API_HostAddress}}/api/licencas/colaborador/1
+Accept: application/json
+
+###
+
+POST {{Licencas_API_HostAddress}}/api/licencas/1/ativar
+Accept: application/json
+
+###
